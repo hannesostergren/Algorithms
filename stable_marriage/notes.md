@@ -1,0 +1,5 @@
+# Input
+
+Regarding the input, it took me a while to understand that the messy input has the numbers in the correct order, they are just listed on the wrong lines since the newlines are in the wrong place.
+
+Initially I believed that if there were more than one occurrence of a number on one line, we would assume that the first encounter is the correct one, and any other encounters should be disregarded. This led to another problem: What happens in this case if the line ends up having fewer than N preferences? Should we accept that the m or w only has that number of preferences? Or should we append the missing numbers to the list? If m or w has a number of preferences lower than N, the algorithm will either terminate with fewer than N output numbers (not everyone has been matched) or it will loop infinitely, which is no good. Appending missing numbers to the preference list is valid to make the algorithm run correctly and terminate. But since the order of the preferences is going to affect the result of the algorithm, we cannot be sure that the output will be correct.
