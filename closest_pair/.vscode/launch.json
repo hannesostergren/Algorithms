@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "args": ["<", "data/secret/4large2.in"],
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ClosestPair",
+            "request": "launch",
+            "mainClass": "ClosestPair",
+            "projectName": "closest_pair_570be37b"
+        }
+    ]
+}

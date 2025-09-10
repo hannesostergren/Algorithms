@@ -2,8 +2,8 @@
 Algorithm implementations in Java
 
 - [x] Stable Marriage Problem (Gale-Shapley) 
-- [ ] Shortest Path (BFS) 
-- [ ] Minimal Spanning Tree (Kruskal's Algorithm) 
-- [ ] Closest Pair (Divide and Conquer) 
+- [x] Shortest Path (BFS) 
+- [x] Minimal Spanning Tree (Kruskal's Algorithm) 
+- [x] Closest Pair (Divide and Conquer) 
 - [ ] Comparing Strings (Dynamic Programming) 
 - [ ] Network Flow (Preflow-Push) 
