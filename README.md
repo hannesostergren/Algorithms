@@ -5,5 +5,5 @@ Algorithm implementations in Java
 - [x] Shortest Path (BFS) 
 - [x] Minimal Spanning Tree (Kruskal's Algorithm) 
 - [x] Closest Pair (Divide and Conquer) 
-- [ ] Comparing Strings (Dynamic Programming) 
+- [x] Sequence alignment (Dynamic Programming) 
 - [ ] Network Flow (Preflow-Push) 
