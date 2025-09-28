@@ -6,4 +6,4 @@ Algorithm implementations in Java
 - [x] Minimal Spanning Tree (Kruskal's Algorithm) 
 - [x] Closest Pair (Divide and Conquer) 
 - [x] Sequence alignment (Dynamic Programming) 
-- [ ] Network Flow (Preflow-Push) 
+- [x] Network Flow (Ford-Fulkerson) 

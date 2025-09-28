@@ -1,0 +1,9 @@
+# Notes
+
+The problem requires finding how many edges can be removed in a graph while still retaining a maximum flow larger than a specified number.
+
+I didn't understand the Ford Fulkerson algorithm initially. The section on the problem in Algorithm Design by Kleinberg & Tardos considers directed graphs, and the input for this problem was and undirected graph. I wasn't sure whether to use the undirected edges until there was a flow in a direction over the edge, at which point the edge would split into a forward and a backward edge, or if I should implement the undirected edges as one directed edge in each direction right from the start. As it turns out, both solutions work. Neither was the solution I selected though. I decided to keep the undirected edges undirected, and always return the residual flow of this edge, which is dependent on which direction the flow should be added from. For forwards edges, we can push c - f more flow units across the edge, and for backwards edges, we can push back f flow units in the reverse direction. If the edge does not have any flow, a push of c can happen from both directions.
+
+I had initially implemented this using a getResidual method that returned the residual graph for the current graph state. And while this was very intuitive, it was also very slow. The reason was that all nodes had to be copied to the residual graph, and then each edge of the graph G iterated over to check the flow and capacity, and whether to create a backwards or forwards edge in the residual graph Gf.
+
+In the end, the solution I decided on builds the residual edges inside the graph itself. I do not particularly like this solution at the moment, as in my mind Gf and G should be separate entities.
